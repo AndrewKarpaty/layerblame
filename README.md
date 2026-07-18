@@ -1,8 +1,12 @@
-# layerblame
+<p align="center">
+  <img src="assets/logo.svg" alt="layerblame logo" width="160"/>
+</p>
 
-**git blame for container vulnerabilities** — maps every CVE back to the Dockerfile instruction that introduced it, ranks instructions by how much a single change would remove, and statically lints your Dockerfile for build-speed, size and security wins.
+<h1 align="center">layerblame</h1>
 
-No Docker daemon needed. Built for CI.
+<p align="center"><b>git blame for container vulnerabilities</b> — maps every CVE back to the Dockerfile instruction that introduced it, ranks instructions by how much a single change would remove, and statically lints your Dockerfile for build-speed, size and security wins.</p>
+
+<p align="center">No Docker daemon needed. Built for CI.</p>
 
 ```
 $ layerblame analyze ghcr.io/acme/api:latest -f Dockerfile

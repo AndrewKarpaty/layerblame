@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="layerblame logo">
+  <defs>
+    <linearGradient id="layer" x1="96" y1="100" x2="416" y2="386" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="alert" x1="96" y1="252" x2="416" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#EF4444"/>
+    </linearGradient>
+  </defs>
+  <!-- image layers, top to bottom -->
+  <rect x="96" y="100" width="320" height="58" rx="16" fill="url(#layer)"/>
+  <rect x="96" y="176" width="320" height="58" rx="16" fill="url(#layer)" opacity="0.85"/>
+  <!-- the culprit layer -->
+  <rect x="96" y="252" width="320" height="58" rx="16" fill="url(#alert)"/>
+  <rect x="96" y="328" width="320" height="58" rx="16" fill="url(#layer)" opacity="0.7"/>
+  <!-- blame gutter: code lines inside each layer -->
+  <g stroke="#FFFFFF" stroke-opacity="0.85" stroke-width="14" stroke-linecap="round">
+    <path d="M128 129 H236"/>
+    <path d="M128 205 H206"/>
+    <path d="M128 281 H188"/>
+    <path d="M128 357 H222"/>
+  </g>
+  <!-- magnifier over the culprit layer -->
+  <circle cx="340" cy="281" r="84" fill="#FFFFFF"/>
+  <circle cx="340" cy="281" r="84" stroke="#1D4ED8" stroke-width="16"/>
+  <!-- finding inside the glass -->
+  <g fill="url(#alert)">
+    <rect x="327" y="234" width="26" height="60" rx="13"/>
+    <circle cx="340" cy="322" r="14"/>
+  </g>
+  <!-- handle -->
+  <path d="M401 342 L446 387" stroke="#1D4ED8" stroke-width="26" stroke-linecap="round"/>
+</svg>
