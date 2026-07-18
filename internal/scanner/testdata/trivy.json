@@ -1,0 +1,35 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "example.com/app:1",
+  "Results": [
+    {
+      "Target": "example.com/app:1 (alpine 3.20.0)",
+      "Class": "os-pkgs",
+      "Type": "alpine",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2024-1234",
+          "PkgName": "curl",
+          "InstalledVersion": "8.8.0-r0",
+          "FixedVersion": "8.9.0-r0",
+          "Severity": "HIGH",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-1234",
+          "Layer": {
+            "Digest": "sha256:ddd444",
+            "DiffID": "sha256:aaa111"
+          }
+        },
+        {
+          "VulnerabilityID": "CVE-2022-0001",
+          "PkgName": "busybox",
+          "InstalledVersion": "1.36.1-r0",
+          "Severity": "UNKNOWN",
+          "Layer": {
+            "Digest": "sha256:eee555",
+            "DiffID": "sha256:bbb222"
+          }
+        }
+      ]
+    }
+  ]
+}

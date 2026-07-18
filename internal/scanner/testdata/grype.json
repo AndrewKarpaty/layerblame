@@ -1,0 +1,50 @@
+{
+  "matches": [
+    {
+      "vulnerability": {
+        "id": "CVE-2024-1234",
+        "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2024-1234",
+        "severity": "High",
+        "fix": {
+          "versions": ["8.9.0-r0"],
+          "state": "fixed"
+        }
+      },
+      "artifact": {
+        "name": "curl",
+        "version": "8.8.0-r0",
+        "locations": [
+          {
+            "path": "/lib/apk/db/installed",
+            "layerID": "sha256:aaa111"
+          }
+        ]
+      }
+    },
+    {
+      "vulnerability": {
+        "id": "CVE-2023-9999",
+        "dataSource": "https://nvd.nist.gov/vuln/detail/CVE-2023-9999",
+        "severity": "Negligible",
+        "fix": {
+          "versions": [],
+          "state": "not-fixed"
+        }
+      },
+      "artifact": {
+        "name": "musl",
+        "version": "1.2.4-r1",
+        "locations": [
+          {
+            "path": "/lib/apk/db/installed",
+            "layerID": "sha256:bbb222"
+          }
+        ]
+      }
+    }
+  ],
+  "descriptor": {
+    "name": "grype",
+    "version": "0.80.0"
+  }
+}
